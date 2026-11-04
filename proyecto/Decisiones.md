@@ -73,15 +73,16 @@ Qué hago si algo no funciona. **Al menos 3 riesgos**, cada uno con su mitigaci�
 
 | Riesgo | Qué hago | Cuándo se activa (fecha o señal) |
 |---|---|---|
-| El tema propio no funciona o se rompe | | |
-| Un plugin falla o no es compatible | | |
-| | | |
+| El tema propio no funciona o se rompe | Activar un tema base gratuito y compatible (como *Astra* o *GeneratePress*) y maquetar los servicios de mecánica mediante bloques de Gutenberg y CSS personalizado. | Si al 15 de noviembre persisten errores fatales de PHP o problemas graves de maquetado en el tema propio. |
+| Un plugin falla o no es compatible | Desactivar el plugin problemático y sustituirlo por una alternativa equivalente (ej: cambiar *WPForms* por *Contact Form 7*, o *Booking Calendar* por *Simply Schedule Appointments*). | Inmediatamente al detectar un error 500, pantalla blanca ("White Screen of Death") o fallos visuales en el sitio tras activar el plugin. |
+| Problemas de servidor o límites en InfinityFree | Desplegar el sitio en un entorno local (*LocalWP* o *XAMPP*) para finalizar el desarrollo y realizar la migración al hosting mediante *Duplicator*. | Si el hosting gratuito se cae de manera continua o excede los límites de uso de CPU/RAM antes del checkpoint del 18 de noviembre. |
+
+---
 
 ## Cambios respecto de la Sumativa 2 (solo en el checkpoint del 18 nov)
 
 | Qué cambié | Qué había antes | Por qué | Evidencia (captura o commit) |
 |---|---|---|---|
-| | | | |
+| *(Pendiente para el 18 nov)* | *(Pendiente para el 18 nov)* | *(Pendiente para el 18 nov)* | *(Pendiente para el 18 nov)* |
 
-**Decisión:** (continúo con mi propuesta / pivoteo, y por qué)
-
+**Decisión:** Continúo con mi propuesta inicial, ya que la arquitectura de páginas y plugins seleccionada cubre todas las necesidades operativas de Rocky's Garage (mecánica ligera, mantenciones, frenos, culatas y agendamiento). *(Se actualizará en el checkpoint del 18 de noviembre solo si aplica algún pivote)*.
