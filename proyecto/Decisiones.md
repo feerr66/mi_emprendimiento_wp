@@ -1,74 +1,71 @@
-# Plantilla: `decisiones.md`
+## Decisiones de mi sitio
 
-Copia este contenido en un archivo `decisiones.md` en la carpeta `proyecto/` de tu repo y complétalo. Es la **Sumativa 2** (25 pts), y en el checkpoint (18 nov) lo corriges. Sin informe largo.
+**Emprendimiento:** Rocky's Garage (Servicio Automotriz - Villa Alemana)  
+**Fecha:** 25 de noviembre de 2026 · **Última corrección:** 18 de noviembre de 2026
 
 ---
 
-# Decisiones de mi sitio
-
-**Emprendimiento:** Brote
-**Fecha:** 25 de noviembre · **Última corrección:** (fecha)
-
 ## 1. Plugins (10 pts)
-
-Al menos **5 plugins**, cada uno vale 2 pts. **SEO** y **contacto** son obligatorios; los otros 3 los eliges según lo que necesita tu sitio (parte de `docs/03-funcionalidades.md`). Guía: `guia-investigar-plugins.md`.
 
 | # | Funcionalidad | Plugin | Gratis o de pago | Qué incluye la versión gratis | Probado hasta (WP) | Requiere PHP | ¿Funciona con tema propio? | Enlace a la ficha |
 |---|---|---|---|---|---|---|---|---|
-| 1 | SEO (obligatorio) | | | | | | | |
-| 2 | Contacto (obligatorio) | | | | | | | |
-| 3 | | | | | | | | |
-| 4 | | | | | | | | |
-| 5 | | | | | | | | |
+| 1 | SEO (obligatorio) | Yoast SEO | Gratis | Títulos meta, descripciones, sitemap XML y optimización SEO local para búsquedas en Villa Alemana. | 6.7 | 7.4+ | Sí | [Ficha Yoast SEO](https://wordpress.org/plugins/wordpress-seo/) |
+| 2 | Contacto (obligatorio) | WPForms | Gratis | Formulario de contacto drag-and-drop, recepción de consultas por correo y anti-spam. | 6.7 | 7.2+ | Sí | [Ficha WPForms](https://wordpress.org/plugins/wpforms-lite/) |
+| 3 | Reserva de Horas / Citas | Booking Calendar | Gratis | Calendario para agendar revisiones de mecánica ligera, embargues o mantenciones. | 6.7 | 7.4+ | Sí | [Ficha Booking Calendar](https://wordpress.org/plugins/booking/) |
+| 4 | Botón Directo a WhatsApp | Joinchat | Gratis | Botón flotante para cotizar trabajos (culatas, frenos, mantenciones) rápido vía WhatsApp. | 6.7 | 7.2+ | Sí | [Ficha Joinchat](https://wordpress.org/plugins/creame-whatsapp-me/) |
+| 5 | Optimización de Imágenes | Smush | Gratis | Compresión automática de imágenes de trabajos del taller sin perder calidad de carga. | 6.7 | 7.4+ | Sí | [Ficha Smush](https://wordpress.org/plugins/wp-smushit/) |
+
+---
 
 ## 2. Páginas de la fase 1 (5 pts)
 
-**5 páginas**, 1 pt cada una. **Inicio** y **Contacto** son obligatorias; las otras 3 las eliges (no pueden ser del carro de compras).
-
 | # | Página | Por qué la elijo (una línea) |
 |---|---|---|
-| 1 | Inicio (obligatoria) | |
-| 2 | Contacto (obligatoria) | |
-| 3 | | |
-| 4 | | |
-| 5 | | |
+| 1 | **Inicio (obligatoria)** | Presentación del taller en Villa Alemana, llamado a la acción y resumen de especialidades mecánicas. |
+| 2 | **Contacto (obligatoria)** | Ubicación en Villa Alemana, mapa interactivo, redes sociales (@rg.automotriz_) y formulario directo. |
+| 3 | **Servicios** | Detalle de especialidades: mantenciones generales, frenos, embrague, culatas y mecánica ligera. |
+| 4 | **Nosotros** | Historia del garage, experiencia técnica y garantías para generar confianza con los clientes. |
+| 5 | **Agendar Hora** | Formulario exclusivo para cotizar o solicitar hora de revisión en el taller. |
 
-**Páginas que dejo para después:** (lista corta)
+**Páginas que dejo para después:**
+* Tienda online de repuestos y fluidos automotrices (WooCommerce).
+* Blog de tips de mantenimiento preventivo y cuidados mecánicos.
+* Preguntas Frecuentes (FAQ sobre garantías y tiempos de reparación).
+
+---
 
 ## 3. Plan del tema (5 pts)
 
-- **Nombre del tema:**
-- **Custom o descargado:** (y por qué, en una línea)
-- **Carta Gantt** del desarrollo del sitio (5 al 25 de noviembre). Puedes usar esta tabla o un diagrama Mermaid.
+* **Nombre del tema:** Rocky Garage Theme
+* **Custom o descargado:** Custom, porque permite maquetar a medida los servicios de mecánica ligada y mantener una carga ultra rápida sin código innecesario.
+* **Carta Gantt del desarrollo del sitio (5 al 25 de noviembre):**
 
 | Etapa | Desde | Hasta | Notas |
 |---|---|---|---|
-| Identidad visual | | | |
-| Home | | | |
-| Páginas | | | |
-| Plugins | | | |
-| **Checkpoint (18 nov)** | | 18 nov | |
-| Ajustes y formulario | | | |
-| **Entrega final (25 nov)** | | 25 nov | |
+| Identidad visual | 5 nov | 8 nov | Definición de colores, tipografía, logo de Rocky's Garage y assets visuales. |
+| Home | 9 nov | 12 nov | Maquetación de la página principal y llamado a la acción para agendar horas. |
+| Páginas | 12 nov | 15 nov | Creación del contenido para Servicios, Nosotros, Contacto y Agendar Cita. |
+| Plugins | 14 nov | 17 nov | Instalación y configuración de Yoast SEO, WPForms, Booking Calendar, etc. |
+| Checkpoint (18 nov) | 18 nov | 18 nov | Revisión de avance, correcciones de retroalimentación y control de commits. |
+| Ajustes y formulario | 19 nov | 24 nov | Pruebas de funcionamiento del formulario de contacto, reservas y diseño responsive. |
+| Entrega final (25 nov) | 25 nov | 25 nov | Subida del sitio final, optimización de velocidad y entrega definitiva del repositorio. |
+### Carta Gantt del desarrollo del sitio (5 al 25 de noviembre)
 
-Ejemplo con Mermaid (GitHub lo muestra como gráfico):
-
-````
 ```mermaid
 gantt
     dateFormat YYYY-MM-DD
-    title Plan de mi sitio
+    title Plan de mi sitio - Rocky's Garage
     section Tema
     Identidad visual :2026-11-05, 4d
     Home             :2026-11-09, 4d
     section Contenido
     Páginas          :2026-11-12, 5d
     Plugins          :2026-11-14, 4d
-    Checkpoint           :milestone, 2026-11-18, 0d
-    Ajustes          :2026-11-19, 6d
+    Checkpoint       :milestone, 2026-11-18, 0d
+    Ajustes y Formulario :2026-11-19, 6d
     Entrega final    :milestone, 2026-11-25, 0d
-```
-````
+
+
 
 ## 4. Plan B (5 pts)
 
