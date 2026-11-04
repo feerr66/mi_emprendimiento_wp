@@ -49,23 +49,6 @@
 | Checkpoint (18 nov) | 18 nov | 18 nov | Revisión de avance, correcciones de retroalimentación y control de commits. |
 | Ajustes y formulario | 19 nov | 24 nov | Pruebas de funcionamiento del formulario de contacto, reservas y diseño responsive. |
 | Entrega final (25 nov) | 25 nov | 25 nov | Subida del sitio final, optimización de velocidad y entrega definitiva del repositorio. |
-### Carta Gantt del desarrollo del sitio (5 al 25 de noviembre)
-
-```mermaid
-gantt
-    dateFormat YYYY-MM-DD
-    title Plan de mi sitio - Rocky's Garage
-    section Tema
-    Identidad visual :2026-11-05, 4d
-    Home             :2026-11-09, 4d
-    section Contenido
-    Páginas          :2026-11-12, 5d
-    Plugins          :2026-11-14, 4d
-    Checkpoint       :milestone, 2026-11-18, 0d
-    Ajustes y Formulario :2026-11-19, 6d
-    Entrega final    :milestone, 2026-11-25, 0d
-
-
 
 ## 4. Plan B (5 pts)
 
