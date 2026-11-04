@@ -51,7 +51,7 @@
 | Entrega final (25 nov) | 25 nov | 25 nov | Subida del sitio final, optimización de velocidad y entrega definitiva del repositorio. |
 
 Ejemplo con Mermaid (GitHub lo muestra como gráfico):
-````
+
 ```mermaid
 gantt
     dateFormat YYYY-MM-DD
@@ -66,7 +66,7 @@ gantt
     Ajustes y Formulario             :2026-11-19, 6d
     Entrega final                    :milestone, 2026-11-25, 0d
 ```
-`````
+
 
 ## 4. Plan B (5 pts)
 
