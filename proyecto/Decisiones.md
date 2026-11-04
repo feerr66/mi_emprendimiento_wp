@@ -50,6 +50,20 @@
 | Ajustes y formulario | 19 nov | 24 nov | Pruebas de funcionamiento del formulario de contacto, reservas y diseño responsive. |
 | Entrega final (25 nov) | 25 nov | 25 nov | Subida del sitio final, optimización de velocidad y entrega definitiva del repositorio. |
 
+Ejemplo con Mermaid (GitHub lo muestra como gráfico):
+gantt
+    dateFormat YYYY-MM-DD
+    title Plan de mi sitio - Rocky's Garage
+    section Tema Custom
+    Identidad visual (Logo y colores) :2026-11-05, 4d
+    Home (Servicios y agendamiento)  :2026-11-09, 4d
+    section Contenido
+    Páginas (Frenos, Culatas, etc.)  :2026-11-12, 5d
+    Plugins (SEO, WPForms, Booking)  :2026-11-14, 4d
+    Checkpoint (Revisión de avance)   :milestone, 2026-11-18, 0d
+    Ajustes y Formulario             :2026-11-19, 6d
+    Entrega final                    :milestone, 2026-11-25, 0d
+
 ## 4. Plan B (5 pts)
 
 Qué hago si algo no funciona. **Al menos 3 riesgos**, cada uno con su mitigación y cuándo se activa.
