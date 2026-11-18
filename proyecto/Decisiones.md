@@ -86,4 +86,4 @@ Qué hago si algo no funciona. **Al menos 3 riesgos**, cada uno con su mitigaci�
 |---|---|---|---|
 | Forminator en vez de WPForms para el formulario de contacto | WPForms | WPForms falló al instalarlo en local (error 500) y Contact Form 7 salió incompatible con la versión de WordPress del hosting | Captura del error 500, captura de CF7 incompatible y captura del formulario funcionando |
 
-**Decisión:** Continúo con mi propuesta inicial, ya que la arquitectura de páginas y plugins seleccionada cubre todas las necesidades operativas de Rocky's Garage (mecánica ligera, mantenciones, frenos, culatas y agendamiento). *(Se actualizará en el checkpoint del 18 de noviembre solo si aplica algún pivote)*.
+**Decisión:** Continúo con mi propuesta, con un ajuste en el plugin de formularios*.
