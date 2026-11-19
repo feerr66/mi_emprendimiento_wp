@@ -84,6 +84,6 @@ Qué hago si algo no funciona. **Al menos 3 riesgos**, cada uno con su mitigaci�
 
 | Qué cambié | Qué había antes | Por qué | Evidencia (captura o commit) |
 |---|---|---|---|
-| Forminator en vez de WPForms para el formulario de contacto | WPForms | WPForms falló al instalarlo en local (error 500) y Contact Form 7 salió incompatible con la versión de WordPress del hosting | Captura del error 500, captura de CF7 incompatible y captura del formulario funcionando |
+| Forminator en vez de WPForms para el formulario de contacto | WPForms | WPForms falló al instalarlo en local (error 500) y Contact Form 7 salió incompatible con la versión de WordPress del hosting | ![Formulario funcionando](formulario-funcionando.png) ![Error WPforms](error-wpforms.png) ![cf7 incompatible](cf7-incompatible.png) |
 
 **Decisión:** Continúo con mi propuesta, con un ajuste en el plugin de formularios*.
