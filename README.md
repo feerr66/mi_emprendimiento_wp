@@ -1,115 +1,90 @@
-# [Nombre de tu emprendimiento] · Sitio WordPress
+# Rocky's Garage · Sitio WordPress
 
-> **Este README es tuyo.** Complétalo mientras construyes tu sitio y borra las instrucciones entre paréntesis. Las instrucciones del proyecto están en [`indicaciones/README.md`](indicaciones/README.md).
-
-- **Sitio en producción:** (URL de InfinityFree)
-- **Prototipo en Stitch:** (enlace)
-- **Repo del Parcial 02:** (enlace a `mi-emprendimiento`)
-- **Autor/a:** (nombre y sección)
+- **Sitio en producción:** https://rockys-garage.infinityfree.me
+- **Prototipo en Stitch:** https://stitch.google.com/projects/1726645708207365365
+- **Repo del Parcial 02:** https://github.com/feerr66/mi-emprendimiento.git
+- **Autor/a:** Fernanda Ubeda 001D
 
 ## Contexto de la web
 
-(3 a 5 líneas: qué es tu emprendimiento, a quién le vende, qué problema resuelve el sitio y qué quieres que haga la persona cuando llega. Apóyate en tu proto-persona y tu brief del Parcial 02.)
+Rocky's Garage es un taller de servicio automotriz de Villa Alemana que ofrece mantenciones generales, frenos, embrague, culatas y mecánica ligera. El sitio está pensado para personas que tienen un problema con su auto y quieren entenderlo antes de decidir dónde repararlo. Resuelve la falta de claridad y de precios previos en los talleres: explica cada falla en palabras sencillas y muestra las piezas cambiadas. Quiero que quien llega conozca el taller, lea algún consejo del blog y escriba por el formulario de Contacto para pedir una cotización o una hora de revisión.
 
 ## Mi tema
 
-Marca una opción y borra la otra sección de instrucciones.
+- [x] **Tema propio:** `Rocky Garage Theme` (construido a partir de `tema-base/`)
+- [ ] **Tema descargado:** (no aplica)
 
-- [ ] **Tema propio:** `(nombre del tema)`
-- [ ] **Tema descargado:** `(nombre del tema)` · (enlace a su ficha)
+### Instrucciones para instalar mi tema en un WordPress limpio
 
----
-
-## Instrucciones si uso un tema propio
-
-*(Borra esta sección si usas un tema descargado.)*
-
-Cómo instalar mi tema en un WordPress limpio:
-
-1. **Descarga el tema:** (de dónde se baja el `.zip`, por ejemplo la carpeta `proyecto/mi-tema/` comprimida o un *Release* de este repo).
+1. **Descarga el tema:** comprime la carpeta del tema (`Rocky Garage Theme`, dentro de `proyecto/`) en un `.zip`.
 2. **Instálalo:** en WordPress, **Apariencia > Temas > Añadir nuevo > Subir tema**, elige el `.zip` y pulsa **Instalar ahora**.
 3. **Actívalo:** pulsa **Activar**.
-4. **Configura la portada:** **Ajustes > Lectura > Una página estática** y elige tu página de inicio.
-5. **Crea el menú:** **Apariencia > Menús**, con tus páginas, y asígnalo a «Menú principal».
-6. **Instala los plugins** que necesita (ver tabla de abajo).
+4. **Configura la portada:** **Ajustes > Lectura > Una página estática** y elige la página *Inicio*.
+5. **Crea el menú:** **Apariencia > Menús** (o Editor > Navegación) con Inicio, Blog, Nosotros y Contacto, y asígnalo al menú principal.
+6. **Instala los plugins** que necesita (ver tabla más abajo).
 7. **Crea las páginas y entradas** (ver más abajo).
 
-Qué debe tener el servidor: (versión de WordPress y de PHP con que probaste tu tema).
+**Qué debe tener el servidor:** WordPress 7.0.2 y PHP 8.4.28 (las versiones con que probé el sitio), con Apache y enlaces permanentes activados.
 
----
+## Cómo llevé mi sitio de Local a producción
 
-## Instrucciones si uso un tema descargado
-
-*(Borra esta sección si usas un tema propio.)*
-
-### Requisitos del tema
-
-| Dato | Mi tema |
-|---|---|
-| Nombre y enlace a la ficha | |
-| Gratis o de pago | |
-| Tipo (clásico o de bloques) | |
-| Versión de WordPress que requiere | |
-| Versión de PHP que requiere | |
-| Plugins que necesita (si alguno) | |
-| Licencia | |
-
-### Cómo llevar mi sitio de Local a producción
-
-Explica cómo exportas los datos de tu sitio en Local WP y los importas en producción (InfinityFree) con un plugin. Completa:
-
-- **Plugin de migración que uso:** (nombre y enlace a su ficha). Gratis o de pago: (...). Límites que tiene: (por ejemplo, tamaño máximo de importación).
-- **Qué se exporta:** (entradas, páginas, imágenes, menús, configuración).
+- **Plugin de migración que uso:** All-in-One WP Migration https://es.wordpress.org/plugins/all-in-one-wp-migration/. Gratis. Límites: en mi servidor el tamaño máximo de subida de archivos es de 20 MB (`post_max_size` de 30 MB), así que el archivo `.wpress` que importe debe pesar menos que eso; además la versión gratuita del plugin tiene su propio límite de importación.
+- **Qué se exporta:** entradas, páginas, imágenes (medios), menús, plugins, tema y configuración.
 
 Pasos:
 
-1. **En Local:** (cómo exportas, con el plugin).
-2. **En producción:** (instalas un WordPress limpio, instalas el mismo plugin y el mismo tema).
-3. **Importa:** (cómo cargas el archivo que exportaste).
-4. **Revisa:** enlaces permanentes, menú, página de inicio, imágenes y formulario de contacto.
-5. **Problemas que tuve y cómo los resolví:** (...).
-
----
+1. **En Local:** en el sitio de desarrollo (LocalWP) voy a **All-in-One WP Migration > Exportar a > Archivo** y descargo el archivo `.wpress`.
+2. **En producción:** instalo un WordPress limpio en InfinityFree, e instalo el mismo plugin de migración.
+3. **Importa:** voy a **All-in-One WP Migration > Importar**, cargo el archivo `.wpress` y confirmo la importación.
+4. **Revisa:** enlaces permanentes (Ajustes > Enlaces permanentes > Guardar), menú, página de inicio, imágenes y formulario de contacto con un mensaje de prueba.
+5. **Problemas que tuve y cómo los resolví:**
+   - **Error 500 al instalar plugins desde mi copia local:** instalé los plugins directamente en el sitio de producción.
+   - **Bloqueo de acceso al admin** («Has superado el máximo de intentos de acceso»): lo causó el plugin Loginizer, que bloquea tras varios intentos fallidos. Esperé los 15 minutos del bloqueo antes de volver a intentar. «COMPLETAR: cómo recuperaste la contraseña realmente».
+   - **`?i=1` en la URL:** lo agrega InfinityFree para protegerse de bots. No es un error.
 
 ## Respaldo y reinstalación en otro servidor
-
-El objetivo de este proyecto es que puedas **respaldar tu sitio y reinstalarlo en cualquier servidor**. Explícalo para que otra persona pueda seguir tus pasos.
 
 **Qué respaldar:**
 
 - Los archivos de WordPress (tema, plugins, imágenes subidas).
 - La base de datos (páginas, entradas, menús, configuración).
 
-**Cómo respaldo mi sitio:** (plugin o método que usas, por ejemplo BackWPup o tu plugin de migración; dónde queda el archivo; cada cuánto lo haces).
+**Cómo respaldo mi sitio:** con All-in-One WP Migration, en **Exportar a > Archivo**. El archivo `.wpress` incluye archivos y base de datos, y queda en mi computador antes de cada cambio grande.
 
 **Cómo lo reinstalo en un servidor nuevo:**
 
-1. **Requisitos del servidor:** (versión de PHP, de MySQL y de WordPress; espacio necesario).
-2. **Instalar WordPress limpio:** (cómo).
-3. **Restaurar el respaldo:** (cómo lo cargas con tu plugin).
-4. **Ajustar:** (enlaces permanentes, URL del sitio, menú y página de inicio).
-5. **Probar:** (qué revisas para saber que quedó bien: sitio, imágenes, formulario de contacto con un mensaje de prueba).
+1. **Requisitos del servidor:** PHP 8.4 (probado con 8.4.28), WordPress 7.0.2, MySQL/MariaDB «COMPLETAR: Herramientas > Salud del sitio > Información > Base de datos»; memoria PHP de 512 MB y espacio suficiente para el archivo de respaldo y las imágenes.
+2. **Instalar WordPress limpio:** desde el panel del hosting (instalador de WordPress) o subiendo WordPress manualmente y creando una base de datos.
+3. **Restaurar el respaldo:** instalo All-in-One WP Migration, voy a **Importar**, subo el `.wpress` y confirmo.
+4. **Ajustar:** guardo los enlaces permanentes (estructura «día y nombre»: `/%year%/%monthnum%/%day%/%postname%/`), reviso que la URL del sitio sea la del nuevo servidor (Ajustes > Generales), y compruebo menú y página de inicio.
+5. **Probar:** reviso el sitio, las imágenes y envío un mensaje de prueba por el formulario de contacto para confirmar que llega al correo.
 
-**Problemas que tuve y cómo los resolví:** (...)
+**Problemas que tuve y cómo los resolví:** ver la sección anterior.
 
 ## Plugins instalados
 
 | Plugin | Para qué lo uso | Gratis o de pago | Versión |
 |---|---|---|---|
-| (SEO) | | | |
-| (Contacto) | | | |
-| | | | |
-| | | | |
-| | | | |
+| Yoast SEO (SEO) | Títulos meta, descripciones y sitemap XML | Gratis | «COMPLETAR: solo si lo tienes instalado» |
+| Forminator (Contacto) | Formulario de contacto con confirmación y aviso por correo | Gratis | 1.58.6 |
+| WP Mail SMTP | Mejorar el envío de correos del formulario | Gratis | 4.10.4 |
+| All-in-One WP Migration | Exportar e importar el sitio (respaldo y migración) | Gratis | 7.113 |
+| Loginizer | Seguridad: bloquea intentos repetidos de acceso al admin | Gratis | 2.1.2 |
+| W3 Total Cache | Caché para mejorar la velocidad | Gratis | 2.11.0 |
+
+> Versiones tomadas de **Plugins > Plugins instalados**. Si tienes otros plugins activos (por ejemplo Yoast SEO), agrégalos con su versión.
 
 ## Páginas y entradas
 
-- **Páginas:** (las 5 de la fase 1)
-- **Entradas del blog:** (títulos de tus 3 entradas)
+- **Páginas:** Inicio, Blog, Nosotros y Contacto. 
+- **Entradas del blog:**
+  1. ¿Qué significa la luz check engine y cuándo es urgente?
+  2. 5 señales de que tu embrague está fallando
+  3. ¿Cada cuántos kilómetros cambiar el aceite?
 
 ## Cómo me organicé
 
-Mi plan y mi plan B están en [`decisiones.md`](proyecto/decisiones.md) (si haces tema propio, está en `proyecto/documentacion/`). (Si cambiaste de rumbo, cuéntalo aquí en una o dos líneas.)
+Mi plan y mi plan B están en [`decisiones.md`](proyecto/decisiones.md). Cambié el plugin del formulario: pasé de WPForms a Forminator porque WPForms falló y Contact Form 7 salió incompatible con la versión de WordPress del hosting (el detalle y las capturas están en `decisiones.md`).
 
 ## Plan de continuidad y rendimiento
 
@@ -118,4 +93,4 @@ Mi plan y mi plan B están en [`decisiones.md`](proyecto/decisiones.md) (si hace
 
 ## Uso de IA
 
-- **(Herramienta):** para qué la usé y qué ajusté yo.
+- **Claude (Anthropic):** lo usé para ordenar los pasos de la entrega, entender errores (500 al instalar plugins, bloqueo de acceso, plugin incompatible) y redactar borradores de documentación. «COMPLETAR: qué ajusté yo, por ejemplo, textos, colores, elección de Forminator, pruebas del formulario».
