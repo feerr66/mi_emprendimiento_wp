@@ -39,8 +39,8 @@ La etapa 1 dejó un sitio publicado con Inicio, Blog (3 entradas), Nosotros y Co
 | 2 | Configurar correo confiable (SMTP) y probar el formulario de contacto | Semana 1 de diciembre | Todos los mensajes de clientes llegan al correo del taller |
 | 3 | Reserva de horas online y botón de WhatsApp | Semanas 2 de diciembre| El cliente agenda su revisión sin llamar |
 | 4 | Páginas Servicios y Preguntas Frecuentes | Semanas 2 de diciembre | El cliente entiende qué ofrece el taller y qué garantía tiene |
-| 5 | Mejoras de velocidad según el análisis de Lighthouse (imágenes, caché) | Semanas  de diciembre | Mejor puntaje de rendimiento en móvil |
-| 6 | Tienda online con WooCommerce y pasarela de pago, primero con pocos productos | Semanas  de diciembre | Primeras ventas de fluidos y repuestos |
+| 5 | Mejoras de velocidad según el análisis de Lighthouse (imágenes, caché) | Semanas 3 de diciembre | Mejor puntaje de rendimiento en móvil |
+| 6 | Tienda online con WooCommerce y pasarela de pago, primero con pocos productos | Semanas 3 de diciembre | Primeras ventas de fluidos y repuestos |
 
 ## 4. Riesgos y mitigación (1 pt)
 
