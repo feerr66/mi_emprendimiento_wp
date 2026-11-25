@@ -37,10 +37,10 @@ La etapa 1 dejó un sitio publicado con Inicio, Blog (3 entradas), Nosotros y Co
 |---|---|---|---|
 | 1 | Contratar hosting de pago y dominio, y migrar el sitio con All-in-One WP Migration (siguiendo el README) | Semana 1 de diciembre | Sitio estable con dominio propio y HTTPS, sin errores 500/429 |
 | 2 | Configurar correo confiable (SMTP) y probar el formulario de contacto | Semana 1 de diciembre | Todos los mensajes de clientes llegan al correo del taller |
-| 3 | Reserva de horas online y botón de WhatsApp | Semanas 2 y 3 de diciembre | El cliente agenda su revisión sin llamar |
-| 4 | Páginas Servicios y Preguntas Frecuentes | Semana 4 de diciembre | El cliente entiende qué ofrece el taller y qué garantía tiene |
-| 5 | Mejoras de velocidad según el análisis de Lighthouse (imágenes, caché) | Enero de 2027 | Mejor puntaje de rendimiento en móvil |
-| 6 | Tienda online con WooCommerce y pasarela de pago, primero con pocos productos | Febrero a marzo de 2027 | Primeras ventas de fluidos y repuestos |
+| 3 | Reserva de horas online y botón de WhatsApp | Semanas 2 de diciembre| El cliente agenda su revisión sin llamar |
+| 4 | Páginas Servicios y Preguntas Frecuentes | Semanas 2 de diciembre | El cliente entiende qué ofrece el taller y qué garantía tiene |
+| 5 | Mejoras de velocidad según el análisis de Lighthouse (imágenes, caché) | Semanas  de diciembre | Mejor puntaje de rendimiento en móvil |
+| 6 | Tienda online con WooCommerce y pasarela de pago, primero con pocos productos | Semanas  de diciembre | Primeras ventas de fluidos y repuestos |
 
 ## 4. Riesgos y mitigación (1 pt)
 
