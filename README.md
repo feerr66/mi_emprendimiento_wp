@@ -59,7 +59,6 @@ Pasos:
  
 | Plugin | Para qué lo uso | Gratis o de pago | Versión |
 |---|---|---|---|
-| Yoast SEO (SEO) | Títulos meta, descripciones y sitemap XML | Gratis | «COMPLETAR: solo si lo tienes instalado» |
 | Forminator (Contacto) | Formulario de contacto con confirmación y aviso por correo | Gratis | 1.58.6 |
 | WP Mail SMTP | Mejorar el envío de correos del formulario | Gratis | 4.10.4 |
 | All-in-One WP Migration | Exportar e importar el sitio (respaldo y migración) | Gratis | 7.113 |
